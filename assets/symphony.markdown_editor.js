@@ -48,6 +48,14 @@ $.MarkdownEditor = function(element, options){
 			search: /(.+)([\n]?)/g,
 			replace: "### $1$2"
 		},
+		'function-sup': {
+			search: /(.+)([\n]?)/g,
+			replace: "<sup>$1</sup>$2"
+		},
+		'function-sub': {
+			search: /(.+)([\n]?)/g,
+			replace: "<sub>$1</sub>$2"
+		},
 		'function-link': {
 			exec: function(txt, selText, $field) {
 				var results = null;
@@ -141,6 +149,8 @@ $.MarkdownEditor = function(element, options){
 						<span class="function-divider">&nbsp;</span>\
 						<a href="#" class="function-link" title="Link">&infin;</a>\
 						<a href="#" class="function-image" title="Image">&#9635;</a>\
+						<a href="#" class="function-sup" title="Super Script">x<sup>2</sup></a>\
+						<a href="#" class="function-sub" title="Sub Script">x<sub>2</sub></a>\
 					</div>\
 				</div>\
 			');

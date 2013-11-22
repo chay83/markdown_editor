@@ -4,6 +4,7 @@
 .markdowneditor textarea {
 	margin-top: 0;
 	border-radius: 0 0 2px 2px;
+	font-family: monospace;
 }
 .markdowneditor-function-bar {
 	position: relative;
@@ -33,6 +34,25 @@
 		background: -webkit-linear-gradient(top, #fafafa, #eaeaea);
 		background: -moz-linear-gradient(top, #fafafa, #eaeaea);
 	}
+
+
+	.markdowneditor-function-buttons sub,
+	.markdowneditor-function-buttons sup {
+	    font-size: 75%;
+	    line-height: 0;
+	    position: relative;
+	    vertical-align: baseline;
+	}
+
+	.markdowneditor-function-buttons sup {
+	    top: -0.5em;
+	}
+
+	.markdowneditor-function-buttons sub {
+	    bottom: -0.25em;
+	}
+
+
 	.markdowneditor-function-buttons a:hover {
 		color: #fff;
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
